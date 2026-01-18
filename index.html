@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>SQUARE M</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>SQUARE M</h1>
+  <p>Gestão de metragem por projeto</p>
+</header>
+
+<nav>
+  <button onclick="mostrar('calc')">Projeto</button>
+  <button onclick="mostrar('hist')">Histórico</button>
+</nav>
+
+<section id="calc">
+  <input id="projeto" placeholder="Nome do projeto / obra">
+  <input id="comodo" placeholder="Nome do cômodo">
+  <input id="largura" type="number" placeholder="Largura (m)">
+  <input id="comprimento" type="number" placeholder="Comprimento (m)">
+
+  <button onclick="calcular()">Adicionar cômodo</button>
+  <h3>Total do projeto: <span id="total">0</span> m²</h3>
+
+  <button onclick="salvar()">Salvar no projeto</button>
+
+  <a class="whatsapp"
+     href="https://wa.me/5548999851297?text=sim,%20gostei%20da%20sua%20sugestão%20e%20opto%20por%20usa-la."
+     target="_blank">
+     WhatsApp
+  </a>
+</section>
+
+<section id="hist" style="display:none">
+  <h2>Projetos</h2>
+  <ul id="lista"></ul>
+</section>
+
+<script src="app.js"></script>
+</body>
+    </html>
