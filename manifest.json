@@ -1,0 +1,8 @@
+{
+  "name": "SQUARE M",
+  "short_name": "SQUARE M",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#111",
+  "theme_color": "#111"
+}
